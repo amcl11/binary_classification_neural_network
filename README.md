@@ -14,7 +14,7 @@ To do this we will use a binary classification neural network model. Once an ini
 
 *Target Variable Distribution Plot:* 
 
-![Target Variable Distribution](Target_Variable_Distribution_Plot.png)
+![Target Variable Distribution](plot_images/Target_Variable_Distribution_Plot.png) 
 
 * Which variables are the features for the model:
 
@@ -62,7 +62,7 @@ What variables should be removed from the input data because they are neither ta
  
 *Visualisation of Success Vs Ask_Amt binned Features:*
 
-![Success By Ask_Amt Plot.png](Success_By_Ask_Amt_Plot.png)
+![Success By Ask_Amt Plot.png](plot_images/Success_By_Ask_Amt_Plot.png)
 
 - Additional steps included exploring:      
 
@@ -72,7 +72,7 @@ What variables should be removed from the input data because they are neither ta
 
 `Permutation Importance` - A technique used to determine the importance of individual features to the model's performance. By randomly shuffling a single feature's values and measuring how much the model's performance drops, we can gauge the importance of that feature. Features that lead to a significant drop in performance when shuffled are considered important.  
 
-![Feature Importances Plot](Feature_Importances_Plot.png)
+![Feature Importances Plot](plot_images/Feature_Importances_Plot.png) 
 
 ## Summary:
 | **Model Description**          | **Train Accuracy** | **Validation/Test Accuracy** |
