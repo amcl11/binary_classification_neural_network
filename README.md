@@ -12,7 +12,7 @@ To do this we will use a binary classification neural network model. Once an ini
 * What variable is the Target (Dependent) Variable:
 `IS_SUCCESSFUL`
 
-**Target Variable Distribution Plot:**  
+*Target Variable Distribution Plot:* 
 
 ![Target Variable Distribution](Target_Variable_Distribution_Plot.png)
 
@@ -42,8 +42,8 @@ What variables should be removed from the input data because they are neither ta
 
 - The `sigmoid` activation function was applied to the output layer for all iterations. This is chosen because the sigmoid function outputs values between 0 and 1, making it ideal for binary classification. The output can be interpreted as the probability of the instance belonging to one of the two classes.
 
- - For Model 1's first and subsequent hidden layers we started with `relu` before experimenting further with `leaky relu`, `tanh`, and `sigmoid` in future models. Models seemed to perform better without leaky relu as an activation option, so I eventually dropped that option. 
-
+ - **Model 1** - Used relu for the activation function in both the input layer and first (and only) hidden layer as a starting point. 
+ - **Model 2** - First and subsequent hidden layers were experimented with by iterating through `relu`, `leaky relu`, `tanh`, and `sigmoid`. Model 2 seemed to perform better without leaky relu as an activation option, so I eventually dropped that option.   
 - `tuner.search` was used to run multiple hyperparameter options to find the best model and iterate over different neurons, layers, and activation functions. 
 
 **Were you able to achieve the target model performance?**
@@ -52,16 +52,17 @@ What variables should be removed from the input data because they are neither ta
 
 **What steps did you take in your attempts to increase model performance?**
 
- - I created multiple binning options across the below categories:    
+ - I created multiple binning options across the below categories:  
+
   `ASK_AMT`  
   `INCOME_AMT`  
   `APPLICATION_TYPE`  
  `ORGANIZATION`  
  `USE_CASE`
  
-Example visualisation of Success Vs Ask_Amt binned Features:
+*Visualisation of Success Vs Ask_Amt binned Features:*
 
-![Success By Ask_Amt Plot.png](Success_By_Ask_Amt_Plot)
+![Success By Ask_Amt Plot.png](Success_By_Ask_Amt_Plot.png)
 
 - Additional steps included exploring:      
 
@@ -73,7 +74,7 @@ Example visualisation of Success Vs Ask_Amt binned Features:
 
 ![Feature Importances Plot](Feature_Importances_Plot.png)
 
-## Summary
+## Summary:
 | **Model Description**          | **Train Accuracy** | **Validation/Test Accuracy** |
 |----------------------------|----------------|--------------------------|
 | Model 1 (First Run)        | 74.28%         | 72.54%                   |
@@ -81,10 +82,12 @@ Example visualisation of Success Vs Ask_Amt binned Features:
 
 
 
-Model 2 performs best overall.
+**Model 2** performs best overall.
 While its training accuracy is slightly lower than that of Model 1, its validation accuracy is marginally higher. 
 
 A model's performance on validation data is a more reliable indicator of its ability to generalize to unseen data. Additionally, the closer training and validation accuracies are to each other, the less likely the model is overfitting. In this case, Model 2 shows a smaller gap between training and validation accuracy, suggesting it might generalize better to new data.
 
+
+## Recommendation:
 A recommendation for a different model could be to use an ensemble method like Random Forest. It may help with it's ability to rank feature importance and reduce overfitting. Its ensemble nature, being made up of multiple decision trees, can capture a diverse set of patterns and relationships in the data, possibly enhancing the model's predictive performance.
 
