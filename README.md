@@ -38,7 +38,7 @@ What variables should be removed from the input data because they are neither ta
 ### Compiling, Training, and Evaluating the Model:
 **How many neurons, layers, and activation functions did you select for your neural network model, and why?**
 
-- Initially the number of neurons and layers was set based on the shape of the starter code output. While there doesn't seem to be an agreed-upon best practice for determining the number of neurons and layers, the initial structure served as a foundation point before experimenting with the model's architecture. One heuristic is having double the amount of neurons compared to the inputs for the first layer and then reducing the number of neurons in subsecuent layers.
+- Initially the number of neurons and layers was set based on the shape of the starter code output. While there doesn't seem to be an agreed-upon best practice for determining the number of neurons and layers, the initial structure served as a foundation point before experimenting with the model's architecture. One heuristic is having double the amount of neurons compared to the inputs for the first layer and then reducing the number of neurons in subsequent layers.
 
 - The `sigmoid` activation function was applied to the output layer for all iterations. This is chosen because the sigmoid function outputs values between 0 and 1, making it ideal for binary classification. The output can be interpreted as the probability of the instance belonging to one of the two classes.
 
