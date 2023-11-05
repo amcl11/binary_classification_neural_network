@@ -5,7 +5,7 @@
 The purpose of this analysis is to predict whether applicants will be successful if funded by Alphabet Soup.
 
 
-To do this we will use a binary classification neural network model. Once an initial model is built, we'll test feature engineering and hyperparameeter tuning to see if convergence of 75% or higher is possible. 
+To do this we will use a binary classification neural network model. Once an initial model is built, we will aim for the model to achieve or exceed 75% accuracy after hyperparameter tuning and feature engineering. 
 
 
 ### Data Preprocessing:
