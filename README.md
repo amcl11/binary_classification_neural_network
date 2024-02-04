@@ -1,4 +1,4 @@
-# Alphabet Soup: Deep Learning Challenge
+# Alphabet Soup: Binary Classification Neural Network 
 
 
 ## Overview of the analysis:
