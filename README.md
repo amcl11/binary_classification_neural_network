@@ -36,7 +36,6 @@ What variables should be removed from the input data because they are neither ta
 
 
 ### Compiling, Training, and Evaluating the Model:
-**How many neurons, layers, and activation functions did you select for your neural network model, and why?**
 
 - The initial structure served as a foundation point before experimenting with the model's architecture. One heuristic is having double the amount of neurons compared to the inputs for the first layer and then reducing the number of neurons in subsequent layers.
 
@@ -46,13 +45,10 @@ What variables should be removed from the input data because they are neither ta
  - **Model 2** - First and subsequent hidden layers were experimented with by iterating through `relu`, `leaky relu`, `tanh`, and `sigmoid`. Model 2 seemed to perform better without leaky relu as an activation option, so I eventually dropped that option.   
 - `tuner.search` was used to run multiple hyperparameter options to find the best model and iterate over different neurons, layers, and activation functions. 
 
-**Were you able to achieve the target model performance?**
 
-- I was unable to score over 75% on the validation data without overfitting the training data. 
+**Steps to try increase model performance**
 
-**What steps did you take in your attempts to increase model performance?**
-
- - I created multiple binning options across the below categories:  
+ - Multiple binning options across the below categories:  
 
   `ASK_AMT`  
   `INCOME_AMT`  
