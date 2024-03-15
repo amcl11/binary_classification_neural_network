@@ -1,11 +1,11 @@
 # Alphabet Soup: Binary Classification Neural Network 
 
 
-## Overview of the analysis:
+## Overview:
 The purpose of this analysis is to predict whether applicants will be successful if funded by Alphabet Soup.
 
 
-To do this we will use a binary classification neural network model. Once an initial model is built, we will aim for the model to achieve or exceed 75% accuracy after hyperparameter tuning and feature engineering. 
+To do this we use a binary classification neural network model. Once an initial model is built, we will aim for the model to achieve or exceed 75% accuracy after hyperparameter tuning and feature engineering. 
 
 
 ### Data Preprocessing:
